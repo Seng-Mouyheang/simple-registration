@@ -1,0 +1,47 @@
+{
+  "name": "simple-registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:watch": "eslint . --watch",
+    "format": "prettier --write .",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seng-Mouyheang/simple-registration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seng-Mouyheang/simple-registration/issues"
+  },
+  "homepage": "https://github.com/Seng-Mouyheang/simple-registration#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.3",
+    "hbs": "^4.2.0",
+    "multiparty": "^4.2.3"
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.14.1",
+    "@eslint/json": "^1.0.1",
+    "@eslint/markdown": "^7.5.1",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.3.0",
+    "nodemon": "^3.1.14",
+    "postcss": "^8.5.6",
+    "prettier": "^3.8.1",
+    "tailwindcss": "^3.4.4"
+  }
+}
