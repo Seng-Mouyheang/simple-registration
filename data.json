@@ -1,3 +1,9 @@
 [
-    
+  {
+    "name": "Mimi",
+    "email": "mimi@gmail.com",
+    "course": "ux-design",
+    "imagePath": "/uploads/1772383127361_profile.jpg",
+    "originalFileName": "profile.jpg"
+  }
 ]

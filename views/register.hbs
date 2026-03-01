@@ -1,0 +1,130 @@
+<div class='max-w-[75%] mx-auto px-6 mt-12'>
+  <div class='text-center mb-10'>
+    <h1 class='font-serif text-4xl font-bold mb-2'>✨ Join Our Learning
+      Community ✨</h1>
+    <p class='text-gray-500 italic text-lg'>Start your journey toward a new
+      career today :D</p>
+  </div>
+
+  <div class='flex flex-row gap-8'>
+    <form
+      action='/register'
+      method='POST'
+      enctype='multipart/form-data'
+      class='flex flex-col w-[70%] bg-white p-8 rounded-xl border border-gray-200'
+    >
+      <div class='mb-4'>
+        <h2 class='font-serif text-2xl font-bold mb-6'>Personal Information</h2>
+
+        <div class='mb-6'>
+          <label
+            for='file_name'
+            class='flex text-xs font-bold uppercase mb-3 text-gray-500'
+          >
+            Full Name
+            <span class='text-red-500 ml-1'>*</span>
+          </label>
+          <input
+            type='text'
+            id='file_name'
+            name='name'
+            placeholder='e.g., John Doe'
+            required
+            class='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:shadow-[0_0_0_1px_#a8a29e] transition'
+          />
+        </div>
+
+        <div class='mb-6'>
+          <label
+            for='file_email'
+            class='flex text-xs font-bold uppercase mb-3 text-gray-500'
+          >
+            Email Address
+            <span class='text-red-500 ml-1'>*</span>
+          </label>
+          <input
+            type='email'
+            id='file_email'
+            name='email'
+            placeholder='your@example.com'
+            required
+            class='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:shadow-[0_0_0_1px_#a8a29e] transition'
+          />
+        </div>
+
+        <div class='mb-6'>
+          <label
+            for='file_course'
+            class='flex text-xs font-bold uppercase mb-3 text-gray-500'
+          >
+            Course Track
+            <span class='text-red-500 ml-1'>*</span>
+          </label>
+          <select
+            name='course'
+            id='file_course'
+            required
+            class='w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:shadow-[0_0_0_1px_#a8a29e] transition'
+          >
+            <option value='' disabled selected>Select a course track</option>
+            <option value='web-development'>🌐 Web Development</option>
+            <option value='data-science'>📊 Data Science</option>
+            <option value='ux-design'>🎨 UX Design</option>
+            <option value='cyber-security'>🔒 Cyber Security</option>
+            <option value='mobile-development'>📱 Mobile Development</option>
+            <option value='game-development'>🎮 Game Development</option>
+          </select>
+        </div>
+      </div>
+
+      <div class='mb-4'>
+        <h2 class='font-serif text-2xl font-bold mb-4'>Profile Image</h2>
+
+        <div class='mb-4'>
+          <label
+            for='image'
+            class='flex text-xs font-bold uppercase mb-3 text-gray-500'
+          >Upload Profile Picture</label>
+          <div
+            class='relative border-2 border-dashed border-gray-300 rounded-lg p-4 hover:border-gray-400 transition'
+          >
+            <input
+              type='file'
+              id='image'
+              name='image'
+              accept='.jpg,.jpeg,.png,image/jpeg,image/png'
+              required
+            />
+          </div>
+          <div class='mt-4 text-sm text-gray-500'>
+            <p>✓ Allowed formats: JPG, JPEG, PNG</p>
+            <p>✓ Maximum file size: 10MB</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        type='submit'
+        class='w-full bg-gray-800 text-white px-6 py-4 rounded-lg font-medium hover:bg-gray-700 transition text-lg'
+      >
+        Complete Registration →
+      </button>
+    </form>
+
+    <div class='bg-gray-100 w-[30%] p-6 rounded-xl mb-4'>
+      <h3 class='font-serif text-xl font-bold mb-4'>What happens next?</h3>
+      <ul class='benefits-list space-y-3 text-gray-600'>
+        <li class='flex items-start gap-2'>✓ Access to available course
+          materials</li>
+        <li class='flex items-start gap-2'>✓ Join study groups and forums</li>
+        <li class='flex items-start gap-2'>✓ Receive learning path and road map</li>
+        <li class='flex items-start gap-2'>✓ Connect with mentors</li>
+        <li class='flex items-start gap-2'>✓ I get your information :]</li>
+        <li class='flex items-start gap-2'>✓ I will not guarentee your success</li>
+        <li class='flex items-start gap-2'>✓ Your information will never reach
+          me</li>
+        <li class='flex items-start gap-2'>✕ Free food and drinks</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+<div class='flex items-center justify-center min-h-[60vh] px-6 py-12'>
+  {{#if (eq type 'error')}}
+    <div class='w-[50%] mx-auto text-center'>
+
+      <h1
+        class='font-serif text-4xl md:text-5xl font-bold mb-4 text-gray-800'
+      >Oops! Something went wrong!</h1>
+
+      <div class='text-gray-500 text-lg mb-8'>
+        <p class='mb-2'>Details on the issue:</p>
+        <p class='italic'>"{{message}}"</p>
+      </div>
+
+      <div class='bg-gray-100 p-6 rounded-lg mb-8 text-left'>
+        <h3 class='font-serif text-xl font-bold mb-4'>Here's what you can do:</h3>
+        <ul class='space-y-2 text-gray-600'>
+          <li class='flex items-center gap-2'>✓ Check if the URL is correct</li>
+          <li class='flex items-center gap-2'>✓ Visit our homepage</li>
+          <li class='flex items-center gap-2'>✓
+            <span class='line-through'>Don't</span>
+            Contact support if you need help</li>
+          <li class='flex items-center gap-2'>✓ I'm joking, please don't banish
+            me to the abyss :[
+          </li>
+        </ul>
+      </div>
+
+      <div class='flex gap-4 justify-center'>
+        <a
+          href='/'
+          class='bg-gray-800 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-700 transition no-underline inline-block'
+        >
+          ← Go Back to Homepage
+        </a>
+      </div>
+    </div>
+  {{/if}}
+</div>
